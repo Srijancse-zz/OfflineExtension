@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki"
+		]
+	},
+	"boilerplate-desc": "これは拡張機能の例です",
+	"boilerplate-i18n-welcome": "BoilerPlate 拡張機能の地域化ファイルにようこそ。",
+	"helloworld": "HelloWorld"
+}

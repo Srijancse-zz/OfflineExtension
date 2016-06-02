@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Dj"
+		]
+	},
+	"boilerplate-desc": "Ez egy példa kiterjesztés",
+	"boilerplate-i18n-welcome": "Üdvözlünk a BoilerPlate kiterjesztés lokalizációs fájljában."
+}

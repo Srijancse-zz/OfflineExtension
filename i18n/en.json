@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": []
+	},
+	"boilerplate-desc": "This is an example extension",
+	"boilerplate-i18n-welcome": "Welcome to the localization file of the BoilerPlate extension.",
+	"boilerplate-helloworld": "Hello world!",
+	"boilerplate-helloworld-intro": "Welcome to the \"Hello world\" special page of the BoilerPlate extension.",
+	"helloworld": "Hello world"
+}

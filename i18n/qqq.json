@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"Umherirrender",
+			"Amire80",
+			"Fhocutt",
+			"Liuxinyu970226"
+		]
+	},
+	"boilerplate-desc": "{{desc|name=Boilerplate|url=https://www.mediawiki.org/wiki/Extension:Boilerplate}}",
+	"boilerplate-i18n-welcome": "Used to greet the user when reading the i18n/??.json file.",
+	"boilerplate-helloworld": "Page title of the HelloWorld special page.\n{{Identical|Hello World}}",
+	"boilerplate-helloworld-intro": "Text displayed on the HelloWorld SpecialPage.",
+	"helloworld": "Text of the link to the HelloWorld special page on SpecialPages.\n{{Identical|Hello World}}"
+}

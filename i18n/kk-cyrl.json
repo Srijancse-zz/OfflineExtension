@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Arystanbek"
+		]
+	},
+	"boilerplate-desc": "Бұл мысал кеңейтілім",
+	"boilerplate-i18n-welcome": "BoilerPlate кеңейтілімінің жерсіндіру файлына қош келдіңіз.",
+	"boilerplate-helloworld": "Сәлем, әлем!",
+	"boilerplate-helloworld-intro": "BoilerPlate кеңейтілімінің «Hello world» арнайы бетіне қош келдіңіз.",
+	"helloworld": "Сәлем, әлем!"
+}

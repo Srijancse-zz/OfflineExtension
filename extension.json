@@ -1,0 +1,52 @@
+{
+	"name": "BoilerPlate",
+	"version": "0.0.0",
+	"author": [
+		"Your Name"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
+	"descriptionmsg": "boilerplate-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"AutoloadClasses": {
+		"BoilerPlateHooks": "BoilerPlate.hooks.php",
+		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+	},
+	"config": {
+		"BoilerPlateEnableFoo": true
+	},
+	"ExtensionMessagesFiles": {
+		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
+	},
+	"Hooks": {
+		"NameOfHook": [
+			"BoilerPlateHooks::onNameOfHook"
+		]
+	},
+	"MessagesDirs": {
+		"BoilerPlate": [
+			"i18n"
+		]
+	},
+	"ResourceModules": {
+		"ext.boilerPlate.foo": {
+			"scripts": [
+				"modules/ext.boilerPlate.js",
+				"modules/ext.boilerPlate.foo.js"
+			],
+			"styles": [
+				"modules/ext.boilerPlate.foo.css"
+			],
+			"messages": [],
+			"dependencies": []
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "BoilerPlate"
+	},
+	"SpecialPages": {
+		"HelloWorld": "SpecialHelloWorld"
+	},
+	"manifest_version": 1
+}

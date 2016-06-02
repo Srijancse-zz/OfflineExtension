@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Sagan",
+			"Янмурза Баки"
+		]
+	},
+	"boilerplate-desc": "Был ҡушымта өлгөһө",
+	"boilerplate-i18n-welcome": "BoilerPlate киңәйтеүе локализация файлына рөхсәт итегеҙ.",
+	"boilerplate-helloworld": "Һаумы, донъя!",
+	"boilerplate-helloworld-intro": "BoilerPlate ҡушымтаһының «Һаумы, донъя!» махсус битенә рәхим итегеҙ!",
+	"helloworld": "Һаумы, донъя!"
+}

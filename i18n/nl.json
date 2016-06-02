@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"AvatarTeam",
+			"SPQRobin",
+			"Jeleniccz"
+		]
+	},
+	"boilerplate-desc": "Dit is een voorbeeld van de uitbreiding",
+	"boilerplate-i18n-welcome": "Welkom bij het lokalisatiebestand van de BoilerPlate-uitbreiding.",
+	"boilerplate-helloworld": "Hallo wereld!",
+	"boilerplate-helloworld-intro": "Welkom bij de \"Hallo wereld\" speciale pagina van de Standaard extensie.",
+	"helloworld": "HelloWorld"
+}
