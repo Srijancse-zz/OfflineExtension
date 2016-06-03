@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": []
 	},
-	"boilerplate-desc": "This is an example extension",
-	"boilerplate-i18n-welcome": "Welcome to the localization file of the BoilerPlate extension.",
-	"boilerplate-helloworld": "Hello world!",
-	"boilerplate-helloworld-intro": "Welcome to the \"Hello world\" special page of the BoilerPlate extension.",
+	"offlineextension-desc": "This is an example extension",
+	"offlineextension-i18n-welcome": "Welcome to the localization file of the offlineextension extension.",
+	"offlineextension-helloworld": "Hello world!",
+	"offlineextension-helloworld-intro": "Welcome to the \"Hello world\" special page of the offlineextension extension.",
 	"helloworld": "Hello world"
 }
