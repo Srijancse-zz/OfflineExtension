@@ -6,7 +6,7 @@
 	}
 
 	/**
-	 * @class mw.boilerPlate.Foo
+	 * @class mw.offlineextension.Foo
 	 *
 	 * @constructor
 	 */
@@ -32,6 +32,6 @@
 		}
 	};
 
-	mw.boilerPlate.Foo = Foo;
+	mw.offlineextension.Foo = Foo;
 
 }() );

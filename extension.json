@@ -1,41 +1,41 @@
 {
-	"name": "BoilerPlate",
+	"name": "offlineextension",
 	"version": "0.0.0",
 	"author": [
-		"Your Name"
+		"Srijan Agarwal"
 	],
-	"url": "https://www.mediawiki.org/wiki/Extension:BoilerPlate",
-	"descriptionmsg": "boilerplate-desc",
+	"url": "",
+	"descriptionmsg": "offlineextension-desc",
 	"license-name": "MIT",
 	"type": "other",
 	"AutoloadClasses": {
-		"BoilerPlateHooks": "BoilerPlate.hooks.php",
+		"offlineextensionHooks": "offlineextension.hooks.php",
 		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
 	},
 	"config": {
-		"BoilerPlateEnableFoo": true
+		"offlineextensionEnableFoo": true
 	},
 	"ExtensionMessagesFiles": {
-		"BoilerPlateAlias": "BoilerPlate.i18n.alias.php"
+		"offlineextensionAlias": "offlineextension.i18n.alias.php"
 	},
 	"Hooks": {
 		"NameOfHook": [
-			"BoilerPlateHooks::onNameOfHook"
+			"offlineextensionHooks::onNameOfHook"
 		]
 	},
 	"MessagesDirs": {
-		"BoilerPlate": [
+		"offlineextension": [
 			"i18n"
 		]
 	},
 	"ResourceModules": {
-		"ext.boilerPlate.foo": {
+		"ext.offlineextension.foo": {
 			"scripts": [
-				"modules/ext.boilerPlate.js",
-				"modules/ext.boilerPlate.foo.js"
+				"modules/ext.offlineextension.js",
+				"modules/ext.offlineextension.foo.js"
 			],
 			"styles": [
-				"modules/ext.boilerPlate.foo.css"
+				"modules/ext.offlineextension.foo.css"
 			],
 			"messages": [],
 			"dependencies": []
@@ -43,7 +43,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteExtPath": "BoilerPlate"
+		"remoteExtPath": "offlineextension"
 	},
 	"SpecialPages": {
 		"HelloWorld": "SpecialHelloWorld"

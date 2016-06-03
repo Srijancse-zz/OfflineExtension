@@ -1,6 +1,6 @@
 <?php
 
-$wgResourceModules['ext.BoilerPlate'] = array(
+$wgResourceModules['ext.offlineextension'] = array(
 	// JavaScript and CSS styles. To combine multiple files, just list them as an array.
 	'scripts' => ( 'js/offline.min.js'),
 	'styles' => array('css/offline-language-english-indicator.css , css/offline-language-english.css'),

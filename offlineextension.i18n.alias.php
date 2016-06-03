@@ -1,6 +1,6 @@
 <?php
 /**
- * Aliases for special pages of the BoilerPlate extension
+ * Aliases for special pages of the offlineextension extension
  *
  * @file
  * @ingroup Extensions
