@@ -21,6 +21,10 @@
 	"ExtensionMessagesFiles": {
 			"offlineextensionAlias": "offlineextension.i18n.alias.php"
 	},
+	"ResourceFileModulePaths": {
+        "localBasePath": ""
+			},
+
 	"config": {
 		"offlineextensionEnableFoo": true
 	},
