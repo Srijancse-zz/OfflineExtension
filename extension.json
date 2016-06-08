@@ -1,16 +1,25 @@
 {
 	"name": "offlineextension",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"author": [
 		"Srijan Agarwal"
 	],
-	"url": "",
+	"url": "https://github.com/Srijancse/GSoC-Project---Offline-Extension",
 	"descriptionmsg": "offlineextension-desc",
 	"license-name": "MIT",
 	"type": "other",
-	"AutoloadClasses": {
-		"offlineextensionHooks": "offlineextension.hooks.php",
-		"SpecialHelloWorld": "specials/SpecialHelloWorld.php"
+	"AutoloadClasses":{
+        "offlineextension":"offlineextension.php",
+        "offlineextensionHooks":"offlineextensionHooks.php",
+        "Specialofflineextension":"Specialofflineextension.php"
+    },
+		"MessagesDirs":{
+			"offlineextension":[
+					"i18n"
+			]
+	},
+	"ExtensionMessagesFiles": {
+			"offlineextensionAlias": "offlineextension.i18n.alias.php"
 	},
 	"config": {
 		"offlineextensionEnableFoo": true
