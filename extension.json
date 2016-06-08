@@ -54,12 +54,9 @@
 			"dependencies": []
 		}
 	},
-	"ResourceFileModulePaths": {
-		"localBasePath": "",
-		"remoteExtPath": "offlineextension"
-	},
+	
 	"SpecialPages": {
-		"HelloWorld": "SpecialHelloWorld"
+		"offlineextension": "Specialofflineextension"
 	},
 	"manifest_version": 1
 }
