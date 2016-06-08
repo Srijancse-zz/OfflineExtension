@@ -1,14 +1,14 @@
 <?php
 /**
- * Aliases for special pages of the offlineextension extension
+ * Aliases for offlineextension
  *
- * @file
- * @ingroup Extensions
  */
 
-$specialPageAliases = [];
+$specialPageAliases = array();
 
-/** English (English) */
-$specialPageAliases['en'] = [
-	'HelloWorld' => [ 'HelloWorld' ],
-];
+/** English
+ * @author <Srijan Agarwal>
+ */
+$specialPageAliases['en'] = array(
+    'offlineextension' => array( 'offlineextension', 'offlineextension' ),
+);
