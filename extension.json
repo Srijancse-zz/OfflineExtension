@@ -42,19 +42,22 @@
 		]
 	},
 	"ResourceModules": {
-		"ext.offlineextension.foo": {
+		"ext.offlineextension": {
 			"scripts": [
-				"modules/ext.offlineextension.js",
-				"modules/ext.offlineextension.foo.js"
+
+			"modules/ext.offlineextension.foo.js"
 			],
 			"styles": [
-				"modules/ext.offlineextension.foo.css"
+				"modules/ext.offlineextension.foo-indicator.css",
+				"modules/ext.offlineextension.foo-english.css",
+				"modules/ext.offlineextension.foo-theme.css"
+
 			],
 			"messages": [],
 			"dependencies": []
 		}
 	},
-	
+
 	"SpecialPages": {
 		"offlineextension": "Specialofflineextension"
 	},
