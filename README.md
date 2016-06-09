@@ -1,1 +1,1 @@
-This is a mediawiki extension that will add offline suppoort to the current Wiki Editor. 
+This is a mediawiki extension for WikiTolLearn that will add offline suppoort to the current Wiki Editor. 
