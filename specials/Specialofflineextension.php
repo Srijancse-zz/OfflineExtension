@@ -10,7 +10,7 @@ class SpecialHelloWorld extends SpecialPage {
 	public function execute( $sub ) {
 		$out = $this->getOutput();
 		$out->addModules( 'offline' );
-47	$out->addModuleStyles('offline-theme-default');
+  	$out->addModuleStyles('offline-theme-default');
 		$out->addModuleStyles('offline-language-english');
 		$out->addModuleStyles('offline-language-english-indicator');
 		$out->setPageTitle( $this->msg( 'offlineextension-helloworld' ) );
