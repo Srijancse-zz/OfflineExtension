@@ -13,7 +13,7 @@ class Specialofflineextension extends SpecialPage {
    	$out->addModuleStyles('ext.offlineextension.foo-indicator');
 		$out->addModuleStyles('ext.offlineextension.foo-english');
 		$out->addModuleStyles('ext.offlineextension.foo-theme');
-		$out->setPageTitle( $this->msg( 'offlineextension-helloworld' ) );
+		$out->setPageTitle( $this->msg( 'offlineextension-sayshelloworld' ) );
 
 		$out->addHelpLink( 'How to become a MediaWiki hacker' );
 
