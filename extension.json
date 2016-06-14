@@ -50,7 +50,7 @@
 			"styles": [
 				"modules/ext.offlineextension.foo-indicator.css",
 				"modules/ext.offlineextension.foo-english.css",
-				"modules/ext.offlinextension.foo-theme.css"
+				"modules/ext.offlineextension.foo-theme.css"
 
 			],
 			"messages": [],
