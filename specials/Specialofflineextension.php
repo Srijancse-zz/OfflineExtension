@@ -9,10 +9,10 @@ class SpecialHelloWorld extends SpecialPage {
 
 	public function execute( $sub ) {
 		$out = $this->getOutput();
-		$out->addModules( 'offline' );
-  	$out->addModuleStyles('offline-theme-default');
-		$out->addModuleStyles('offline-language-english');
-		$out->addModuleStyles('offline-language-english-indicator');
+		$out->addModules( 'ext.offlineextension.foo' );
+   	$out->addModuleStyles('ext.offlineextension.foo-indicator');
+		$out->addModuleStyles('ext.offlineextension.foo-english');
+		$out->addModuleStyles('ext.offlineextension.foo-theme');
 		$out->setPageTitle( $this->msg( 'offlineextension-helloworld' ) );
 
 		$out->addHelpLink( 'How to become a MediaWiki hacker' );

@@ -1,5 +1,5 @@
 <?php
-
+/*Entry point */
 if (!defined('MEDIAWIKI')){
     die();
 }
