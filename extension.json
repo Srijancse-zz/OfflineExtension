@@ -10,8 +10,8 @@
 	"type": "other",
 	"AutoloadClasses":{
         "offlineextension":"offlineextension.php",
-        "offlineextensionHooks":"offlineextensionHooks.php",
-        "Specialofflineextension":"Specialofflineextension.php"
+        "offlineextensionHooks":"offlineextension.hooks.php",
+        "Specialofflineextension":"specials/Specialofflineextension.php"
     },
 		"MessagesDirs":{
 			"offlineextension":[
