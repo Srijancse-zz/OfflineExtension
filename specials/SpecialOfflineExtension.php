@@ -1,7 +1,7 @@
 <?php
 
 
-class SpecialHelloWorld extends SpecialPage {
+class Specialofflineextension extends SpecialPage {
 	public function __construct() {
 		parent::__construct( 'HelloWorld' );
 	}

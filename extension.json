@@ -1,56 +1,56 @@
 {
-	"name": "offlineextension",
+	"name": "OfflineExtension",
 	"version": "0.1.0",
 	"author": [
 		"Srijan Agarwal"
 	],
 	"url": "https://github.com/Srijancse/GSoC-Project---Offline-Extension",
-	"descriptionmsg": "offlineextension-desc",
+	"descriptionmsg": "OfflineExtension-desc",
 	"license-name": "MIT",
 	"type": "other",
 	"AutoloadClasses":{
-        "offlineextension":"offlineextension.php",
-        "offlineextensionHooks":"offlineextension.hooks.php",
-        "Specialofflineextension":"specials/Specialofflineextension.php"
+        "OfflineExtension":"OfflineExtension.php",
+        "OfflineExtensionHooks":"OfflineExtension.hooks.php",
+        "SpecialOfflineExtension":"specials/SpecialOfflineExtension.php"
     },
 		"MessagesDirs":{
-			"offlineextension":[
+			"OfflineExtension":[
 					"i18n"
 			]
 	},
 	"ExtensionMessagesFiles": {
-			"offlineextensionAlias": "offlineextension.i18n.alias.php"
+			"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
 	},
 	"ResourceFileModulePaths": {
         "localBasePath": ""
 			},
 
 	"config": {
-		"offlineextensionEnableFoo": true
+		"OfflineExtensionEnableFoo": true
 	},
 	"ExtensionMessagesFiles": {
-		"offlineextensionAlias": "offlineextension.i18n.alias.php"
+		"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
 	},
 	"Hooks": {
 		"NameOfHook": [
-			"offlineextensionHooks::onNameOfHook"
+			"OfflineExtensionHooks::onNameOfHook"
 		]
 	},
 	"MessagesDirs": {
-		"offlineextension": [
+		"OfflineExtension": [
 			"i18n"
 		]
 	},
 	"ResourceModules": {
-		"ext.offlineextension": {
+		"ext.OfflineExtension": {
 			"scripts": [
 
-			"modules/ext.offlineextension.foo.js"
+			"modules/ext.OfflineExtension.foo.js"
 			],
 			"styles": [
-				"modules/ext.offlineextension.foo-indicator.css",
-				"modules/ext.offlineextension.foo-english.css",
-				"modules/ext.offlineextension.foo-theme.css"
+				"modules/ext.OfflineExtension.foo-indicator.css",
+				"modules/ext.OfflineExtension.foo-english.css",
+				"modules/ext.OfflineExtension.foo-theme.css"
 
 			],
 			"messages": [],
@@ -59,7 +59,7 @@
 	},
 
 	"SpecialPages": {
-		"offlineextension": "Specialofflineextension"
+		"OfflineExtension": "SpecialOfflineExtension"
 	},
 	"manifest_version": 1
 }

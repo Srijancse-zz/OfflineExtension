@@ -1,10 +1,10 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": ["Srijan Agarwal"]
 	},
-	"offlineextension-desc": "This is an example extension",
-	"offlineextension-i18n-welcome": "Welcome to the localization file of the offlineextension extension.",
-	"offlineextension-helloworld": "Hello world!",
-	"offlineextension-helloworld-intro": "Welcome to the \"Hello world\" special page of the offlineextension extension.",
+	"OfflineExtension-desc": "This is an example extension",
+	"OfflineExtension-i18n-welcome": "Welcome to the localization file of the OfflineExtension extension.",
+	"OfflineExtension-helloworld": "Hello world!",
+	"OfflineExtension-helloworld-intro": "Welcome to the \"Hello world\" special page of the OfflineExtension extension.",
 	"helloworld": "Hello world"
 }

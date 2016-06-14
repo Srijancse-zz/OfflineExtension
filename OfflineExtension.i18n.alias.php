@@ -1,6 +1,6 @@
 <?php
 /**
- * Aliases for offlineextension
+ * Aliases for OfflineExtension
  *
  */
 
@@ -10,5 +10,5 @@ $specialPageAliases = array();
  * @author <Srijan Agarwal>
  */
 $specialPageAliases['en'] = array(
-    'offlineextension' => array( 'offlineextension', 'offlineextension' ),
+    'OfflineExtension' => array( 'OfflineExtension', 'OfflineExtension' ),
 );

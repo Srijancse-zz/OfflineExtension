@@ -1,11 +1,11 @@
 <?php
 /**
- * Hooks for offlineextension extension
+ * Hooks for OfflineExtension extension
  *
  * @file
  * @ingroup Extensions
  */
 
-class offlineextensionHooks {
+class OfflineExtensionHooks {
 
 }
