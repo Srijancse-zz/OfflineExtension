@@ -45,12 +45,12 @@
 		"ext.OfflineExtension": {
 			"scripts": [
 
-			"modules/ext.offlineextension.foo.js"
+			"modules/ext.offlineextension.foo"
 			],
 			"styles": [
-				"modules/ext.offlineextension.foo-indicator.css",
-				"modules/ext.offlineextension.foo-english.css",
-				"modules/ext.offlineextension.foo-theme.css"
+				"modules/ext.offlineextension.foo-indicator",
+				"modules/ext.offlineextension.foo-english",
+				"modules/ext.offlineextension.foo-theme"
 
 			],
 			"messages": [],
