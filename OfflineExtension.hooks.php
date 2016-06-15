@@ -1,11 +1,10 @@
 <?php
-/**
- * Hooks for offlineextension extension
- *
- * @file
- * @ingroup Extensions
- */
+class OfflineExtensionHooks
+{
+  public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
 
-class offlineextensionHooks {
-
+    $out->addModules( array( 'ext.OfflineExtension' ) )
+    
+  }
 }
+Raw
