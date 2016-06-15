@@ -1,1 +1,1 @@
-This is a mediawiki extension for WikiToLearn that will add offline suppoort to the current Wiki Editor. 
+This is a mediawiki extension for WikiToLearn that will add offline support to the current Wiki Editor. 
