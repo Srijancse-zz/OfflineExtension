@@ -59,7 +59,7 @@
 	},
 
 	"SpecialPages": {
-		"OfflineExtension": "SpecialOfflineExtension"
+		
 	},
 	"manifest_version": 1
 }
