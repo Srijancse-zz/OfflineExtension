@@ -3,8 +3,6 @@ if (function_exists('wfLoadExtension')) {
     wfLoadExtension('OfflineExtension');
     // Keep i18n globals so mergeMessageFileList.php doesn't break
     $wgMessagesDirs['OfflineExtension'] = __DIR__.'/i18n';
-    $out = $this->getOutput();
-    $out->setPageTitle('cioa');
     wfWarn(
         'Deprecated PHP entry point used for OfflineExtension extension. Please use wfLoadExtension instead, '.'see https://www.mediawiki.org/wiki/Extension_registration for more details.'
     );
