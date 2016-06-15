@@ -32,8 +32,8 @@
 		"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
 	},
 	"Hooks": {
-		"NameOfHook": [
-			"OfflineExtensionHooks::onNameOfHook"
+		"BeforePageDisplay": [
+			"OfflineExtensionHooks::onBeforePageDisplay"
 		]
 	},
 	"MessagesDirs": {
