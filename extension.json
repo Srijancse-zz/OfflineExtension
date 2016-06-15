@@ -45,7 +45,7 @@
 		"ext.OfflineExtension": {
 			"scripts": [
 
-			"modules/ext.offlineextension.foo.js"
+			"modules/ext-offlineextension.foo.js"
 			],
 			"styles": [
 				"modules/ext.offlineextension.foo-indicator.css",
