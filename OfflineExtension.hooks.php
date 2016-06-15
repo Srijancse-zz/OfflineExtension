@@ -7,7 +7,7 @@ class OfflineExtensionHooks
 
     $out->addModules( array( 'ext.offlineextension.foo' ) );
     $out->addModuleStyles( array( 'ext.offlineextension.foo-indicator','ext.offlineextension.foo-english','ext.offlineextension.foo-theme'));
-
+return true;
   }
 
 
