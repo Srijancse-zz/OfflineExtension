@@ -22,7 +22,8 @@
 			"OfflineExtensionAlias": "OfflineExtension.i18n.alias.php"
 	},
 	"ResourceFileModulePaths": {
-        "localBasePath": ""
+        "localBasePath": "",
+				"remoteExtPath": "OfflineExtension"
 			},
 
 	"config": {
@@ -43,23 +44,20 @@
 	},
 	"ResourceModules": {
 		"ext.OfflineExtension": {
+			"position": "bottom",
 			"scripts": [
-
-			"modules/ext.offlineextension.foo.js"
+			"modules/ext.OfflineExtension.js"
 			],
+
 			"styles": [
-				"modules/ext-offlineextension.foo-indicator.css",
-				"modules/ext.offlineextension.foo-english.css",
-				"modules/ext.offlineextension.foo-theme.css"
+				"modules/OfflineExtension.indicator.css",
+				"modules/OfflineExtension.english.css",
+				"modules/OfflineExtension.theme.css"
 
 			],
 			"messages": [],
 			"dependencies": []
 		}
-	},
-
-	"SpecialPages": {
-		
 	},
 	"manifest_version": 1
 }
