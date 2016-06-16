@@ -46,7 +46,7 @@
 		"ext.OfflineExtension": {
 			"position": "bottom",
 			"scripts": [
-			"modules/ext.OfflineExtension.js"
+			"modules/OfflineExtension.js"
 			],
 
 			"styles": [
