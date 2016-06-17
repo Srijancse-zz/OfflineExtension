@@ -44,11 +44,10 @@
 	},
 	"ResourceModules": {
 		"ext.OfflineExtension": {
-			"position": "bottom",
+			"position": "top",
 			"scripts": [
-			"modules/OfflineExtension.js"
+				"modules/OfflineExtension.js"
 			],
-
 			"styles": [
 				"modules/OfflineExtension.indicator.css",
 				"modules/OfflineExtension.english.css",
