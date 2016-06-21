@@ -45,8 +45,9 @@
 	"ResourceModules": {
 		"ext.OfflineExtension": {
 			"position": "top",
-			"scripts": [
-				"modules/OfflineExtension.js"
+			"scripts":[
+				"modules/OfflineExtension.js",
+				"modules/OfflineExtension.wiki.js"
 			],
 			"styles": [
 				"modules/OfflineExtension.indicator.css",
