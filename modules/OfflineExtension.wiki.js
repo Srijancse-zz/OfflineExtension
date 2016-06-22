@@ -15,7 +15,7 @@ $('#wpTextbox1').bind('input propertychange', function() {
         }
         xhr.onerror = function() {
             if (no instanceof Function) {
-              no();
+                no();
             }
         }
         xhr.open("HEAD", "WikiEditor.php", true); //We can change the URL to point to any file that exists on server.
@@ -25,12 +25,25 @@ $('#wpTextbox1').bind('input propertychange', function() {
     isOnline(
         function() {
             alert("Offline and User is editing");
-            //Function to alert the user when clicks the preview button when he's offline
+            //Function to alert the user when clicks the wikitolearn's preview button when he's offline
             $(function() {
                 $("#wpPreview").click(function() {
-                  alert('You are offline and clicked Preview');
+                    alert('You are offline and clicked Preview');
                 });
             });
+            //Function to display data to user via console when he clicks the wikieditor's preview butoon while he's offline
+            $("a").on('click', function() {
+                if ($(this).text() === "Preview") {
+                    $(this).parent().toggleClass("current");
+                    checkCurrent();
+                }
+            });
+
+            function checkCurrent() {
+                if ($('div[rel="wikiEditor-ui-view-preview"]').hasClass("current")) {
+                    console.log("You are offline and clicked Preview");
+                }
+            }
 
         },
         function() {
