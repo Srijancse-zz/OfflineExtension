@@ -1,7 +1,6 @@
 .offline-ui.offline-ui-up .offline-ui-content:before {
-  content: "Online";
+    content: "Online";
 }
-
 .offline-ui.offline-ui-down .offline-ui-content:before {
-  content: "Offline";
+    content: "Offline";
 }
