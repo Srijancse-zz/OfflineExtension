@@ -63,7 +63,7 @@
     }, a.trigger = function(a) {
         var b, c, d, e, g, h, i;
         if (null != f[a]) {
-            for (g = f[a], i = [], d = 0, e = g.length; e > d; d++) h = g[d], b = h[0], c = h[1], i.push(c.call(b));
+            for (g = f[a].slice(0), i = [], d = 0, e = g.length; e > d; d++) h = g[d], b = h[0], c = h[1], i.push(c.call(b));
             return i
         }
     }, b = function(a, b, c) {
