@@ -1,3 +1,5 @@
+//Automatically display online/offline indication to your users. (https://github.com/HubSpot/offline)
+
 (function() {
     var a, b, c, d, e, f, g;
     d = function(a, b) {
