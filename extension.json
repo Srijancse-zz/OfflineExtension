@@ -47,12 +47,18 @@
 			"position": "top",
 			"scripts":[
 				"modules/OfflineExtension.js",
-				"modules/OfflineExtension.wiki.js"
+				"modules/OfflineExtension.wiki.js",
+				"modules/wiky.js",
+				"modules/wiky.lang.js",
+				"modules/wiky.math.js"
 			],
 			"styles": [
 				"modules/OfflineExtension.indicator.css",
 				"modules/OfflineExtension.english.css",
-				"modules/OfflineExtension.theme.css"
+				"modules/OfflineExtension.theme.css",
+				"modules/wiky.css",
+				"modules/wiky.lang.css",
+				"modules/wiky.math.css"
 
 			],
 			"messages": [],
