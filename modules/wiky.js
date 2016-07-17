@@ -5,6 +5,7 @@
 	Author:  Stefan Goessner/2005-06
 	Web:     http://goessner.net/
 */
+
 var Wiky = {
     version: 0.95,
     blocks: null,
@@ -148,10 +149,10 @@ var Wiky = {
         ],
         wikiinlines: [{
                 rex: /<math>(.*?)<\/math>/mgi,
-                tmplt: "$$$1$$" //Parsing <math> tag to $
+                tmplt: "$$ $1 $$" //Parsing <math> tag to $
             }, {
                 rex: /<math *display *= *"?block"?>(.*?)<\/math>/mgi,
-                tmplt: "$$$$$1$$$$" //Parsing <math display ="block"> tag to $$
+                tmplt: "$$$$$ $1 $$$$$" //Parsing <math display ="block"> tag to $$
             }, {
                 rex: /\*([^*]+)\*/g,
                 tmplt: "<strong>$1</strong>"
