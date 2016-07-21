@@ -1,6 +1,4 @@
-/*	This work is licensed under Creative Commons GNU LGPL License.
-
-	License: http://creativecommons.org/licenses/LGPL/2.1/
+cense: http://creativecommons.org/licenses/LGPL/2.1/
 
 	Author:  Stefan Goessner/2005-06
 	Web:     http://goessner.net/
@@ -316,6 +314,27 @@ var Wiky = {
                 }
             }, // list items ..
             {
+                rex: /^((#*)[^#].*(\n))(?=#\2)/gm,
+                tmplt: "$1<ol>$3"
+            }, {
+                rex: /^((#+).*(\n))(?!\2|<ol)/gm,
+                tmplt: "$1</ol>$2.$2$3"
+            }, {
+                rex: /#(?=(#+)\.#+\n(?!\1))/gm,
+                tmplt: "</ol>"
+            }, {
+                rex: /(<\/ol>)[#.]+/gm,
+                tmplt: "$1"
+            }, {
+                rex: /^((#+).*(\n))(?=\2[^#]|<\/ol)/gm,
+                tmplt: "$1</li>$3"
+            }, {
+                rex: /^(<\/ol>(\n)*)#+/gm,
+                tmplt: "$1</li>$2<li>"
+            }, {
+                rex: /^#+/gm,
+                tmplt: "<li>"
+            }, {
                 rex: /(^|\xB6)<(u|o)l[^>]*?>\xB6/mgi,
                 tmplt: "$1"
             }, // only outer level list start at BOL ...
@@ -669,3 +688,4 @@ var Wiky = {
             .replace(/<p><\/p>/, "");
     }
 }
+
