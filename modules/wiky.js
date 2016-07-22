@@ -1,9 +1,8 @@
-cense: http://creativecommons.org/licenses/LGPL/2.1/
-
+/*  This work is licensed under Creative Commons GNU LGPL License.
+    License: http://creativecommons.org/licenses/LGPL/2.1/
     Author:  Stefan Goessner/2005-06
-    Web:     http://goessner.net/
+    Web:     http://goessner.net/ 
 */
-
 
 var Wiky = {
     version: 0.95,
