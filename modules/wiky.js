@@ -1,7 +1,7 @@
 /*  This work is licensed under Creative Commons GNU LGPL License.
     License: http://creativecommons.org/licenses/LGPL/2.1/
     Author:  Stefan Goessner/2005-06
-    Web:     http://goessner.net/ 
+    Web:     http://goessner.net/
 */
 
 var Wiky = {
@@ -69,7 +69,15 @@ var Wiky = {
                     var state = $2.replace(/([*])/g, "u").replace(/([\.])/, "");
                     return ":" + state + "]" + $1 + "[" + state + ":";
                 }
-            }, {
+            },
+            {
+                rex: /(^|\xB6)([#01aAiIg]*[\.#])/g,
+                tmplt: function($0, $1, $2) {
+                    var state = $2.replace(/([#])/g, "1").replace(/([\.])/, "");
+                    return ":" + state + "]" + $1 + "[" + state + ":";
+                }
+            },
+             {
                 rex: /(?:^|\xB6);[ ](.*?):[ ]/g,
                 tmplt: "\xB6:l][l:$1:d][d:"
             }, // ; term : definition
@@ -102,7 +110,7 @@ var Wiky = {
             {
                 rex: /^(.*)$/g,
                 tmplt: "[p:$1:p]"
-            }, // start paragraph '[p:' at BOS .. end paragraph ':p]' at EOS ..
+            }, // start paragraph '[p:' at BOS .. end paragraph ':p]' at [EOS] ..
             {
                 rex: /(([\xB6])([ \t\f\v\xB6]*?)){2,}/g,
                 tmplt: ":p]$1[p:"
@@ -312,39 +320,8 @@ var Wiky = {
                 tmplt: function($0, $1, $2) {
                     return $1.replace(/u/g, "*").replace(/([01aAiIg])$/, "$1.") + " " + $2;
                 }
-            }, // list items ..
+            },
             {
-                rex: /^((#*)[^#].*(\n))(?=#\2)/gm,
-                tmplt: "$1<ol>$3"
-            }, {
-                rex: /^((#+).*(\n))(?!\2|<ol)/gm,
-                tmplt: "$1</ol>$2.$2$3"
-            }, {
-                rex: /#(?=(#+)\.#+\n(?!\1))/gm,
-                tmplt: "</ol>"
-            }, {
-                rex: /(<\/ol>)[#.]+/gm,
-                tmplt: "$1"
-            }, {
-                rex: /^((#+).*(\n))(?=\2[^#]|<\/ol)/gm,
-                tmplt: "$1</li>$3"
-            }, {
-                rex: /^(<\/ol>(\n)*)#+/gm,
-                tmplt: "$1</li>$2<li>"
-            }, {
-                rex: /^#+/gm,
-                tmplt: "<li>"
-            }, {
-                rex: /(^|\xB6)<(u|o)l[^>]*?>\xB6/mgi,
-                tmplt: "$1"
-            }, // only outer level list start at BOL ...
-            {
-                rex: /(<\/(?:dl|ol|ul|p)>[ \xB6]*<(?:p)>)/gi,
-                tmplt: "\xB6\xB6"
-            }, {
-                rex: /<dt>(.*?)<\/dt>[ \f\n\r\t\v]*<dd>/mgi,
-                tmplt: "; $1: "
-            }, {
                 rex: /<blockquote([^>]*)>/mgi,
                 tmplt: function($0, $1) {
                     return Wiky.store("[" + Wiky.invStyle($1) + Wiky.invAttr($1, ["cite", "title"]) + "\"");
@@ -688,4 +665,3 @@ var Wiky = {
             .replace(/<p><\/p>/, "");
     }
 }
-
