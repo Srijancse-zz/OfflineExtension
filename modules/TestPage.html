@@ -6,7 +6,7 @@
 
 <body>
     <textarea id="input"></textarea>
-    <button onclick="alert(Wiky.toHtml(document.getElementById('input').value));">
+    <button onclick="document.getElementById('input').insertAdjacentHTML('afterend', Wiky.toHtml(document.getElementById('input').value));">
         Parse WikiText to HTML
     </button>
 </body>
