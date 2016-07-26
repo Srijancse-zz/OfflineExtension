@@ -69,13 +69,17 @@ var Wiky = {
                     var state = $2.replace(/([*])/g, "u").replace(/([\.])/, "");
                     return ":" + state + "]" + $1 + "[" + state + ":";
                 }
-            },
+            }, //Ordered List
             {
                 rex: /(^|\xB6)([#01aAiIg]*[\.#])/g,
                 tmplt: function($0, $1, $2) {
                     var state = $2.replace(/([#])/g, "1").replace(/([\.])/, "");
                     return ":" + state + "]" + $1 + "[" + state + ":";
                 }
+            },//Bold text
+            {
+                rex: /['''][\w\W]*[<\''']/g,
+                tmplt: "\n<b>$&</b>\n\t"
             },
              {
                 rex: /(?:^|\xB6);[ ](.*?):[ ]/g,
