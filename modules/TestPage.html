@@ -2,13 +2,16 @@
 
 <head>
     <script type="text/javascript" src="wiky.js"></script>
+
 </head>
 
 <body>
-    <textarea id="input" rows="60" cols="10" style="margin-top:5px"></textarea>
+    <textarea id="input" cols="60" rows="10" style="margin-top:5px"></textarea>
+
     <button onclick="document.getElementById('input').insertAdjacentHTML('afterend', Wiky.toHtml(document.getElementById('input').value));">
         Parse WikiText to HTML
     </button>
+
 </body>
 
 </html>
