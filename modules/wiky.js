@@ -84,22 +84,6 @@ var Wiky = {
             {
                 rex: /'{2}([^']*(?:'(?!'')[^']*)*)'{2}/g,
                 tmplt: "<i>$1</i>"
-            }, //Parsing Tables
-            {
-                rex: /\{\|\s*(.*?)\s*\|\}/g,
-                tmplt: "<table>$1</table>"
-            }, //Finding Rows
-            {
-                rex: /\s*!\s*([^!]+?)(?=\s*!|$)/g,
-                tmplt: "<th>$1</th>"
-            }, //Finding Columns
-            {
-                rex: /(?:^\s*|\s*\|\s*)([^\|]+?)(?=\s*\||$)/g,
-                tmplt: "<td>$1</td>"
-            },
-            {
-                rex: /\s*\|-\s*(?:\|\s*)?/g, //Finds the new row
-                tmplt: ""
             },
             {
                 rex: /(?:^|\xB6);[ ](.*?):[ ]/g,
