@@ -21,6 +21,16 @@ Installation
 require_once "$IP/extensions/OfflineExtension/OfflineExtension.php";
 ```
 
-Navigate to ```Special:Version``` on your wiki to verify that the extension is successfully installed.
+Navigate to Special:Version on your wiki to verify that the extension is successfully installed.
+
+WikiText tags supported 
+---------------
+
+Wikitext is written in a lightweight markup language with specific syntax rules. The tags supported by the Offline Extension can be found <a href="bit.ly/OfflineExtension"> here </a>.
+
+Known Issues 
+---------------
+- Parsing WikiTables to HTML hasn't been added to the parser yet. It is under development.
+
 
 
