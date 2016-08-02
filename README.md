@@ -26,7 +26,7 @@ Navigate to Special:Version on your wiki to verify that the extension is success
 WikiText tags supported 
 ---------------
 
-Wikitext is written in a lightweight markup language with specific syntax rules. The tags supported by the Offline Extension can be found <a href="bit.ly/OfflineExtension"> here </a>.
+Wikitext is written in a lightweight markup language with specific syntax rules. The tags supported by the Offline Extension can be found <a href="http://bit.ly/OfflineExtension"> here </a>.
 
 Known Issues 
 ---------------
