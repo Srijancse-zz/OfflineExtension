@@ -16,23 +16,33 @@
         return HTML;
     }
 
+    //Finds the Table
     var findTable = /\{\|\s*([\s\S]*?)\s*\|\}/g,
             parseTable = function(match, content) {
                 Array.prototype.forEach.call(content.split(newRow), renderRow);
             };
 
-    var newRow = /\s*\|-\s*(?:\|\s*)?/g,
+     //Finds each row
+     var newRow = /\s*\|-\s*(?:\|\s*)?/g,
             renderRow = function(content) {
                 console.log("tr", content, arguments);
+                
+		//If the row has = stores it as table attributes
                 if (content.indexOf("=") !== -1) { console.log("attrs"); attrs += content; }
+               
+		//If the row has ! at the start, render header row
                 else if (content[0] === "!") { console.log("th"); headers += "<tr>" + content.replace(findHeader, renderHeader) + "</tr>"; }
+                
+		//Otherwise, it's a normal row, Get and render each cell
                 else { console.log("td"); rows += "<tr>" + content.replace(findCol, renderCol) + "</tr>"; }
             };
 
+    //Finds the Header and Renders it
     var findHeader = /\s*!\s*([^!]+?)(?=\s*!|$)/g, renderHeader = "<th>$1</th>";
 
+    //Finds the col and Renders it
     var findCol = /(?:^\s*|\s*\|\s*)([^\|]+?)(?=\s*\||$)/g, renderCol = "<td>$1</td>";
-
+    
     var _in = document.getElementById("in"), _out = document.getElementById("out");
     _out.value = renderTables(_in.value);
 
@@ -40,6 +50,5 @@
         e.preventDefault();
         _out.value = renderTables(_in.value);
     };
-
 
 </script>
