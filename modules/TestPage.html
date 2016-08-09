@@ -4,7 +4,7 @@
     <script type="text/javascript" src="wiky.js"></script>
 
     <script type="text/javascript">
-        function parseThisShit(val) {
+        function parse(val) {
             var head = document.getElementsByTagName("head")[0],
                 script;
             script = document.createElement("script");
@@ -29,10 +29,11 @@
     <textarea id="input" cols="60" rows="10" style="margin-top:5px"></textarea>
 
 
-    <button onclick="parseThisShit(input.value)">
+    <button onclick="parse(input.value)">
         Parse WikiText to HTML
     </button>
 
 </body>
 
 </html>
+
