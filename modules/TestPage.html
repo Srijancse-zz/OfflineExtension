@@ -3,14 +3,36 @@
 <head>
     <script type="text/javascript" src="wiky.js"></script>
 
+    <script type="text/javascript">
+
+        function parseThisShit(val) {
+            var head = document.getElementsByTagName("head")[0], script;
+            script = document.createElement("script");
+            script.type = "text/x-mathjax-config";
+            script[(window.opera ? "innerHTML" : "text")] =
+                    "MathJax.Hub.Config({\n" +
+                    "  tex2jax: { inlineMath: [['$','$'], ['\\\\(','\\\\)']] }\n" +
+                    "});"
+            head.appendChild(script);
+            script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+            head.appendChild(script);
+
+
+            document.getElementById('input').insertAdjacentHTML('afterend', Wiky.toHtml(val));
+        }
+    </script>
+
 </head>
 
 <body>
-    <textarea id="input" cols="60" rows="10" style="margin-top:5px"></textarea>
+<textarea id="input" cols="60" rows="10" style="margin-top:5px"></textarea>
 
-    <button onclick="document.getElementById('input').insertAdjacentHTML('afterend', Wiky.toHtml(document.getElementById('input').value));">
-        Parse WikiText to HTML
-    </button>
+
+<button onclick="parseThisShit(input.value)">
+    Parse WikiText to HTML
+</button>
 
 </body>
 
