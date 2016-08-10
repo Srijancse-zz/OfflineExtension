@@ -18,8 +18,9 @@
             script.type = "text/javascript";
             script.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
             head.appendChild(script);
-
-            document.getElementById('input').insertAdjacentHTML('afterend', Wiky.toHtml(val));
+            document.getElementById('content').innerHTML = "";
+            document.getElementById('content').innerHTML = Wiky.toHtml(val);
+            MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
         }
     </script>
 
@@ -27,7 +28,7 @@
 
 <body>
     <textarea id="input" cols="60" rows="10" style="margin-top:5px"></textarea>
-
+    <div id="content"></div>
 
     <button onclick="parse(input.value)">
         Parse WikiText to HTML
