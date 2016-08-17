@@ -31,7 +31,3 @@ Wikitext is written in a lightweight markup language with specific syntax rules.
 Known Issues 
 ---------------
 - Parsing WikiTables to HTML hasn't been added to the parser yet. It is under development.
-- Added Support for MathJax. It has some issues, rectifying it. 
-
-
-
