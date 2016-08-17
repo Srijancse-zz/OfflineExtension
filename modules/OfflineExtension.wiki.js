@@ -18,7 +18,7 @@ $('#wpTextbox1').bind('input propertychange', function() {
                 no();
             }
         }
-        xhr.open("HEAD", "WikiEditor.php", true); //We can change the URL to point to any file that exists on server.
+        xhr.open("HEAD", "", true); //We can change the URL to point to any file that exists on server.
         xhr.send();
     }
 
@@ -28,7 +28,7 @@ $('#wpTextbox1').bind('input propertychange', function() {
             //Function to alert the user when clicks the wikitolearn's preview button when he's offline
             $(function() {
                 $("#wpPreview").click(function() {
-                    alert('You are offline and clicked Preview');
+                    console.log('You are offline and clicked Preview');
                 });
             });
             //Function to display data to user via console when he clicks the wikieditor's preview butoon while he's offline
@@ -47,7 +47,7 @@ $('#wpTextbox1').bind('input propertychange', function() {
 
         },
         function() {
-            alert("Online");
+         //   alert("Online");
         }
     );
 
