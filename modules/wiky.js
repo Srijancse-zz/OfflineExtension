@@ -1,6 +1,8 @@
 /*  This work is licensed under Creative Commons GNU LGPL License.
     License: http://creativecommons.org/licenses/LGPL/2.1/
     Author:  Stefan Goessner/2005-06
+    Contributors: Gianluca Rigoletti/2016
+                  Srijan Agarwal/2016
     Web:     http://goessner.net/
 */
 
