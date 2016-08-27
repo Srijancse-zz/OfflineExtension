@@ -16,7 +16,7 @@
             head.appendChild(script);
             script = document.createElement("script");
             script.type = "text/javascript";
-            script.src = "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+            script.src = "MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
             head.appendChild(script);
             document.getElementById('content').innerHTML = "";
             document.getElementById('content').innerHTML = Wiky.toHtml(val);
@@ -37,4 +37,3 @@
 </body>
 
 </html>
-
